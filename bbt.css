@@ -1,0 +1,41 @@
+body{
+    background-image: url('fond_ecran.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#en_tete{
+    float:right;
+}
+h1{
+    margin: 2%;
+    animation: change 8s linear infinite;
+}
+@keyframes change {
+    0% { margin-left: 0; }
+    25%{ margin-left: 30%}
+  100% { margin-left: 5%; }
+}
+span{
+    font-size:1.3rem
+}
+.texte{
+    margin-left: 5%;
+    font-size:1.3rem;
+}
+#ville> a{
+    color:rgb(223, 235, 235);
+    text-transform:capitalize;
+    animation: clignote 2s linear infinite;
+
+}
+@keyframes clignote {  
+    50% { opacity: 0; }
+  }
+  
+a:hover {
+    background-color: rgb(28, 13, 63);
+    animation:normal;
+  }
+
